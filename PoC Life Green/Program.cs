@@ -30,7 +30,7 @@ namespace POC_PIM
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;");
         }
     }
 
@@ -203,7 +203,7 @@ namespace POC_PIM
 
         static void ApagarUsuario() // FUNÇÃO PARA DELETAR REGISTROS FEITOS NA TABELA USUARIO
         {
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;";
 
             Console.WriteLine("Digite o ID que será excluido");
             int objetoId = int.Parse(Console.ReadLine());
@@ -242,7 +242,7 @@ namespace POC_PIM
 
         static void ApagarProduto() // FUNÇÃO PARA DELETAR REGISTROS FEITOS DA TABELA PRODUTOS 
         {
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;";
 
             Console.WriteLine("Digite o ID que será excluido");
             int objetoId = int.Parse(Console.ReadLine());
